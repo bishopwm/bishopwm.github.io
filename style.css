@@ -1,0 +1,36 @@
+#content {
+	height: 400px;
+	width: 320px;
+	padding: 10px;
+	margin: 100px auto;
+	background-color: #546862;
+	border-radius: 25px;
+	opacity: 0.8;
+/*	background-image: url('images/map.jpg');
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position:center;*/
+}
+
+html body {
+	background-color: #C2C2C2;
+}
+
+
+
+/*.img-info {
+	margin-top: 100px;
+	margin-left: auto;
+
+}*/
+
+.will-photo {
+	width: 300px;
+	text-align: center;
+}
+
+.quote {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}

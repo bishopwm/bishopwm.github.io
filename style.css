@@ -1,8 +1,8 @@
 #content {
-	height: 270px;
+	height: 50px;
 	width: 300px;
 	/*padding: 30px;*/
-	margin: 140px auto;
+	margin: 100px auto;
 /*	background-color: rgba(207, 207, 216, 0.51);
 	border-radius: 50%;*/
 }
@@ -15,10 +15,34 @@ html body {
 	background-size: 100% auto;
 }
 
+body {
+	height: 50px;
+}
+
+.hero-text {
+	height: 50px;
+	width: 300px;
+/*	margin: 40px auto;
+*/	color: rgba(218, 233, 246, 1);
+	text-align: center;
+}
+
+.hero-name {
+	font-size: 36px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
 .will-photo {
 	width: 100%;
 	text-align: center;
 	border: 20px solid rgba(207, 207, 216, 0.51);
+}
+
+.quote {
+	color: rgba(218, 233, 246, 1);
+	font-size: 26px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;
 }
 
 

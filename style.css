@@ -1,36 +1,58 @@
 #content {
-	height: 400px;
-	width: 320px;
-	padding: 10px;
-	margin: 100px auto;
-	background-color: #546862;
-	border-radius: 25px;
-	opacity: 0.8;
-/*	background-image: url('images/map.jpg');
-	background-repeat: no-repeat;
-	background-size:contain;
-	background-position:center;*/
+	height: 270px;
+	width: 300px;
+	/*padding: 30px;*/
+	margin: 140px auto;
+/*	background-color: rgba(207, 207, 216, 0.51);
+	border-radius: 50%;*/
 }
 
 html body {
 	background-color: #C2C2C2;
+	background-image: url('images/globes.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
 }
-
-
-
-/*.img-info {
-	margin-top: 100px;
-	margin-left: auto;
-
-}*/
 
 .will-photo {
-	width: 300px;
+	width: 100%;
 	text-align: center;
+	border: 20px solid rgba(207, 207, 216, 0.51);
 }
 
-.quote {
+
+.nav {
+	display: inline;
+}
+
+.nav-pills {
+	border-radius: 35px;
+}
+
+.list-item {
+	margin-top: 20px;
+	margin-left: 14px;
+	width: 30%;
+	padding: 10px;
 	text-align: center;
-	color: white;
-	font-size: 20px;
+	background-color: rgba(207, 207, 216, 0.51);
+	border-radius: 50%;
+}
+
+#github-img {
+	width: 95%;
+}
+
+#linkedin-img {
+	width: 95%;
+}
+
+#street-img {
+	width: 95%;
+}
+
+a.link-content {
+	border-radius: 50% !important;
+	padding: 10px;
 }

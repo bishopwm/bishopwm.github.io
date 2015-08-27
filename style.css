@@ -1,58 +1,123 @@
+
+html body {
+	background-color: white;
+	/*background-color: rgba(27, 43, 44, 0.96);*/
+}
+
 #content {
-	height: 50px;
-	width: 300px;
-	/*padding: 30px;*/
-	margin: 100px auto;
+	height: 70px;
+	width: 200px;
+	margin-top: -770px;
+	margin-left: 50px;
+	z-index: 1;
 /*	background-color: rgba(207, 207, 216, 0.51);
 	border-radius: 50%;*/
 }
 
 .projects {
-	height: 300px;
-	width: 600px;
+	height: 1000px;
+	width: 50%;
 	margin: 700px auto;
-	text-align: center;
+	text-align: left;
 	font-size: 20px;
+	background-color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+/*	border: 20px solid gray;
+	border-radius: 20px;*/
 }
 
-html body {
-	background-color: white;
-	background-image: url('images/globes.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% auto;
+.about-me {
+	padding-top: 50px;
+	text-align: left;
 }
+
+.my-stuff {
+	padding-top: 50px;
+}
+
+.small-font {
+	font-size: 16px;
+}
+
+.cofc-logo {
+	width: 19%;
+	margin-right: 40px;
+}
+
+.ironhack-logo {
+	width: 5%;
+}
+
+
+#map { 
+	height: 800px; 
+	width: 100%;
+	z-index: -1;
+/*	border-top: 5px solid black;
+	border-bottom: 5px solid black;*/
+}
+
+
 
 body {
 	height: 50px;
 }
 
-.hero-text {
-	height: 50px;
-	width: 300px;
-/*	margin: 40px auto;
-*/	color: rgba(218, 233, 246, 1);
+/*.hero-text {
+	height: 30px;
+	width: 800px;
+	margin: 10px auto;
+	color: rgba(27, 43, 44, 0.96);
 	text-align: center;
+	letter-spacing: 10px;
+}
+*/
+
+.heading {
+	background-color: rgba(70, 83, 82, 0.59);
+	width: 100%;
+	height: 210px;
+	padding: 15px;
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: white;
+	margin: -40px auto;
+/*	border-radius: 22px;
+*/}
+
+.me-sentence {
+	
+	font-size: 28px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: white;
 }
 
 .hero-name {
 	font-size: 36px;
 	width: 100%;
 	font-family: 'Alegreya Sans SC', sans-serif;
+
 }
 
-.will-photo {
-	width: 100%;
-	text-align: center;
-	border: 20px solid rgba(207, 207, 216, 0.51);
+.newyork {
+	font-size: 28px;
+	letter-spacing: 10px;
+	color: rgba(209, 222, 255, 0.82);
 }
 
 .quote {
-	color: rgba(218, 233, 246, 1);
-	font-size: 26px;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	text-align: center;
+	font-size: 28px;
+	letter-spacing: 10px;
 }
+
+.will-photo {
+	width: 20%;
+	text-align: center;
+	/*border: 8px solid rgba(255, 255, 255, 0.51);*/
+	z-index: 1;
+}
+
 
 
 .nav {
@@ -64,9 +129,9 @@ body {
 }
 
 .list-item {
-	margin-top: 20px;
+
 	margin-left: 14px;
-	width: 30%;
+	width: 20%;
 	padding: 10px;
 	text-align: center;
 	background-color: rgba(207, 207, 216, 0.51);
@@ -74,16 +139,17 @@ body {
 }
 
 #github-img {
-	width: 95%;
+	width: 35%;
 }
 
 #linkedin-img {
-	width: 95%;
+	width: 35%;
 }
 
 #street-img {
-	width: 95%;
+	width: 30%;
 }
+
 
 a.link-content {
 	border-radius: 50% !important;
@@ -100,6 +166,7 @@ a.link-content {
 
 .project-technologies {
 	font-weight: bold;
+
 }
 
 a.project-anchor {
@@ -110,3 +177,56 @@ a.project-anchor {
 
 
 
+.bounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-40px;
+  height:80px;
+  width:80px;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.pounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-40px;
+  height:80px;
+  width:80px;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.founce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-40px;
+  height:80px;
+  width:80px;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}

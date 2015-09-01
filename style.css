@@ -28,6 +28,7 @@ html body {
 #scroll-links.past-map {
     background-color: white;
     color: black;
+    margin-top: -100px;
 }
 
 .sidebar {

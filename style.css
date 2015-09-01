@@ -29,6 +29,8 @@ html body {
     background-color: white;
     color: black;
     margin-top: -100px;
+    border-radius: 0;
+    border-right: 1px solid black;
 }
 
 .sidebar {

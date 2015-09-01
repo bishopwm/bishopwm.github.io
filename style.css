@@ -202,6 +202,46 @@ a.project-anchor {
 
 }
 
+@media (max-width: 600px) {
+  .heading {
+    font-size: 46px;
+    height: 150px;
+  }
+  .newyork {
+  	display: none;
+  }
+  .quote {
+  	display: none;
+  }
+	.projects {
+		height: 1000px;
+		width: 30%;
+		margin-top: 700px;
+		margin-left: 60px;
+		text-align: left;
+		font-size: 12px;
+		background-color: white;
+		font-family: 'Alegreya Sans SC', sans-serif;
+
+	}
+
+	#scroll-links.past-map {
+	  display: none;
+	}
+	.empireimg {
+		display: none;
+	}
+	.cofc-logo {
+		width: 60%;
+		margin-right: 40px;
+	}
+
+	.ironhack-logo {
+		width: 15%;
+	}
+
+}
+
 
 
 .bounce {

@@ -5,19 +5,20 @@
 
 	<meta charset="utf-8" name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="textillate-master/assets/animate.css">
-	<script src="textillate-master/assets/jquery.lettering.js"></script>
-	<script src="textillate-master/jquery.textillate.js"></script>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+
 	<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
 	<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 
 </head>
 <body>
+
 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 <div id="map"></div>
@@ -25,19 +26,14 @@
 <script>
 
 
+
+
 L.mapbox.accessToken = 'pk.eyJ1Ijoid2Jpc2hvcDIzMSIsImEiOiJlNjdmZWQ5NWMwMjdmOTNiNjJiZTY0ZTdmZTVlOWY0OSJ9.11weNx-x_-nmTstxP9Kq6g';
 var map = L.mapbox.map('map', 'wbishop231.n6fncj3h');
 
 map.scrollWheelZoom.disable();
 
-// omnivore will AJAX-request this file behind the scenes and parse it:
-// note that there are considerations:
-// - The file must either be on the same domain as the page that requests it,
-//   or both the server it is requested from and the user's browser must
-//   support CORS.
 
-// Internally this uses the toGeoJSON library to decode the KML file
-// into GeoJSON
 var runLayer = omnivore.kml('https://mapbox.js/assets/data/features.kml')
     .on('ready', function() {
         map.fitBounds(runLayer.getBounds());
@@ -76,18 +72,51 @@ $(function() {
 	});
 });
 
-		
+var mainbottom = $('#map').offset().top + $('#map').height();
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    var stop = Math.round($(window).scrollTop());
+
+    if (stop > mainbottom) {
+        $('#scroll-links').addClass('past-map');
+    } else {
+        $('#scroll-links').removeClass('past-map');
+    }
+
+});
+
+
 </script>
 
-
 <div id="content"></div>
+
 <div class="heading">
 	William McGeehan Bishop
-		<p class="newyork">Junior Web Developer • New York, NY</p>
+		<p class="newyork">Jr. Web Developer ↔ New York, NY</p>
 		<p class="quote">"Life begins at the end of your comfort zone." -N.D. Walsch</p>
 		<a href="#project-div"><img src="images/downarrow.png" class="founce" visibility="visible"></a>
 		<a href="#about"><img src="images/downarrow.png" class="bounce" visibility="visible"></a>
+
 </div>
+
+
+<div id="scroll-links">
+	<ul class="sidebar">
+		<li><img src="images/willcomp.jpg" style="width: 130px;height: 120px;" class="willy"></li>
+		<li class="sidebar-list-item"><img src="images/github.png" style="width: 40%; margin-top: 20px;"></li>
+		<li class="sidebar-list-item"><img src="images/linkedin.png" style="width: 40%; margin-top: 20px;"></li>
+		<li class="sidebar-list-item"><img src="images/email.png" style="width: 40%; margin-top: 20px;"></li>
+		
+
+	</ul>
+</div>
+
+
+
+
 <div class="projects">
 	
 		<div name="ed-div"></div>
@@ -98,6 +127,8 @@ $(function() {
 					<p class="small-font">International Scholar</p>
 					<p class="small-font">National Russian Laureate Scholar</p><br /><br />
 					<p>Ironhack Web Development School <br /> Barcelona, Spain </p>
+					<p class="small-font">Full Stack Web Development</p>
+					<p class="small-font">(With a focus on Agile methodologies)</p>
 						<a href="http://internationalstudies.cofc.edu/index.php"><img src="images/cofc.jpeg" class="cofc-logo"></a>
 						<a href="http://www.ironhack.com/en"><img src="images/ironhack_bl.png" class="ironhack-logo"></a>
 			</div>
@@ -106,38 +137,40 @@ $(function() {
 		<br />
 		<br />
 		<br />
-		<hr />
+
+
 	<div name="about"></div>
 		
 		<div class="about-me">
-<!-- 			<div>
-				<img src="images/will.jpg" class="will-photo img-circle">
-			</div> -->
-			<div>
-				<h1>About Me</h1>
-				<p>I have a passion for developing and creating. I love languages: human and non-human alike.</p><br />
-				<p>Frontend or Backend, JavaScript or Ruby, I find the challenge of learning new technologies fun and rewarding!</p><br />
-				<p>I'm meticulous and I live by attention to detail.</p><br />
-				<p>I look forward to broadening my horizons beyond <strong>JavaScript/jQuery, Ruby/Ruby on Rails, HTML, and CSS</strong></p>
-				<h2>I get shit done. And I do it efficiently.</h2>
-				<p>I graduated top of my class in 3 years, including a 4 month full-time internship, 8 months abroad, and an intensive web development bootcamp.</p>
+			<div class="about-me-text">
+				<h1>Why William Bishop?</h1><br />
+				<p><img src="images/globe.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>I am a <span style="color: maroon; font-weight: bold;">driven, creative, & globally-minded </span>individual.</p><br />
+				<p><img src="images/graduate.png" style="width: 6%;"><span>&nbsp;&nbsp;&nbsp;</span>I graduated <span style="color: #f19a0e; font-weight: bold;">top of my class in just 3 years</span>, including a <span style="color: maroon; font-weight: bold;">4 month full-time apprenticeship, 8 months abroad</span>, and an intensive <span style="color: #f19a0e; font-weight: bold;">web development bootcamp.</span></p><br />
+				<p><img src="images/briefcase.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;</span><span style="color: maroon; font-weight: bold;">Frontend</span> or <span style="color: #f19a0e; font-weight: bold;">Backend</span>, &nbsp;<span style="color: maroon; font-weight: bold;">JavaScript</span> or <span style="color: #f19a0e; font-weight: bold;">Ruby</span>, I find the challenge of learning new technologies fun and rewarding, which is why I want to make it my full-time career.</p><br />
+				<p><img src="images/brain.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;</span>I'm seeking a position that will allow me to <span style="color: maroon; font-weight: bold;">grow my current skillset:</span> <span style="color: black; font-weight: bold;"><br /><br /> ← HTML/CSS, Ruby/Ruby on Rails, JavaScript/jQuery, Git/Github, SQL →</span></p>
+
 			</div>
+
+<!-- 			<div class="about-me-photo">
+				<img src="images/alley-pic.jpg" class="will-photo">
+			</div> -->
 			
 			<a href="#ed-div"><img src="images/downarrow.png" class="pounce" visibility="visible"></a>
 		</div>
 
-		<br /><br /><br />
+
+		<br /><br /><br /><br /><br /><br /><br /><br />
 		
 
 	
 		<hr />
 	<div name="project-div"></div>
 
-	<div class="projects-section">
+	<div class="projects-section" id="projects">
 		<h1>Projects</h1>
 		<a href="https://wordonthestreet.herokuapp.com" target="_blank"><h1>Word on The Street</h1></a>
 			<p class="project-description">
-				"Whether you're an expat, a traveller, or just someone curious about the exciting things going on in their neighborhood, don't forget to check out the Word on the Street before your next outing."
+				"Whether you're an expat, a traveller, or just someone curious about the exciting things going on in your neighborhood, don't forget to check out the Word on the Street before your next outing."
 			</p>
 			<ul class="logo-list">
 				<li class="logo-list-item"><img src="images/HTML5.png" width="57px"></li>

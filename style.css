@@ -4,6 +4,13 @@ html body {
 	/*background-color: rgba(27, 43, 44, 0.96);*/
 }
 
+.side-gallery {
+	width: 300px;
+	height: 800px;
+/*	background-color: #ccc;
+*/	float: right;
+}
+
 #content {
 	height: 70px;
 	width: 200px;
@@ -49,7 +56,7 @@ html body {
 
 .projects {
 	height: 1000px;
-	width: 50%;
+	width: 55%;
 	margin: 700px auto;
 	text-align: left;
 	font-size: 20px;
@@ -57,6 +64,7 @@ html body {
 	font-family: 'Alegreya Sans SC', sans-serif;
 
 }
+
 
 .about-me {
 	padding-top: 20px;
@@ -200,6 +208,38 @@ a.project-anchor {
 	font-size: 20px;
 	color: rgba(218, 233, 246, 1);
 
+}
+
+
+
+.wots-pic {
+	width: 90%;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-65px;
+    width:300px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.wots-list {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.wots-list-item {
+	list-style-type: none;
+	margin-bottom: 25px;
+}
+
+.wots-list-item .wots-pic {
+	cursor: pointer;
 }
 
 @media (max-width: 600px) {

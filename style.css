@@ -71,6 +71,10 @@ html body {
 	text-align: left;
 }
 
+.about-me-text {
+	margin-top: 100px;
+}
+
 .my-stuff {
 	padding-top: 50px;
 }
@@ -151,8 +155,14 @@ body {
 	letter-spacing: 10px;
 }
 
-.about-me-text {
+.spacer-large {
+	width: 400px;
+	height: 400px;
+}
 
+.spacer-small {
+	width: 400px;
+	height: 150px;
 }
 
 .nav {
@@ -222,7 +232,7 @@ a.project-anchor {
     position:relative;
     top:-25px;
     left:-65px;
-    width:300px;
+    width:400px;
     height:auto;
     display:block;
     z-index:999;
@@ -240,6 +250,15 @@ a.project-anchor {
 
 .wots-list-item .wots-pic {
 	cursor: pointer;
+}
+
+.links-list {
+	margin-top: 28px;
+	list-style-type: none;
+}
+.links-list-item {
+	display: inline;
+	margin-right: 80px;
 }
 
 @media (max-width: 600px) {
@@ -279,6 +298,9 @@ a.project-anchor {
 	.ironhack-logo {
 		width: 15%;
 	}
+	.side-gallery {
+		display: none;
+	}
 
 }
 
@@ -303,6 +325,24 @@ a.project-anchor {
 }
 
 .pounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-40px;
+  height:80px;
+  width:80px;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.ounce {
   position:fixed;
   left:50%;
   bottom:0;

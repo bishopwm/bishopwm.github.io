@@ -62,7 +62,6 @@ html body {
 	font-size: 20px;
 	background-color: white;
 	font-family: 'Alegreya Sans SC', sans-serif;
-
 }
 
 
@@ -97,8 +96,6 @@ html body {
 	height: 800px; 
 	width: 100%;
 	z-index: -1;
-/*	border-top: 5px solid black;
-	border-bottom: 5px solid black;*/
 }
 
 
@@ -271,6 +268,37 @@ a.project-anchor {
 .ed-link-span {
 	margin-left: 220px;
 }
+
+.mobile-spacer {
+	width: 400px;
+	height: 100px;
+}
+
+#mobile-hero {
+	text-align: center;
+	background-color: gray;
+	height: 300px;
+	width: 100%;
+	background-image: url("images/newyork.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: white;
+	font-weight: bold;
+}
+
+.mobile-hero-text {
+	font-size: 3em;
+}
+
+.mobile-hero-name {
+	font-size: 4em;
+	padding-top: 60px;
+
+}
+
+
+
 @media (max-width: 800px) {
   .heading {
     font-size: 46px;
@@ -284,7 +312,7 @@ a.project-anchor {
   }
 	.projects {
 		height: 1000px;
-		width: 30%;
+		width: 80%;
 		margin-top: 700px;
 		margin-left: 60px;
 		text-align: left;
@@ -294,6 +322,26 @@ a.project-anchor {
 
 	}
 
+	#education-button {
+		display: none;
+	}
+
+	#project-button {
+		display: none;
+	}
+
+	#project-button2 {
+		display: none;
+	}
+
+	#content {
+		width: 400px;
+	}
+
+	#scroll-links {
+		display: none;
+	}
+
 	#scroll-links.past-map {
 	  display: none;
 	}
@@ -301,15 +349,42 @@ a.project-anchor {
 		display: none;
 	}
 	.cofc-logo {
-		width: 60%;
+		width: 40%;
 		margin-right: 40px;
 	}
 
 	.ironhack-logo {
-		width: 15%;
+		width: 9%;
 	}
 	.side-gallery {
 		display: none;
+	}
+
+	.bounce {
+		display: none;
+	}
+	.pounce {
+		display: none;
+	}
+	.founce {
+		display: none;
+	}
+	.ounce {
+		display: none;
+	}
+	.wots-pic {
+		width: 90%;
+		border-radius: 2px;
+		box-shadow: none;
+	}
+	.spacer-large {
+		display: none;
+	}
+	.spacer-small {
+		display: none;
+	}
+	#map { 
+	display: none;
 	}
 
 }

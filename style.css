@@ -271,7 +271,7 @@ a.project-anchor {
 .ed-link-span {
 	margin-left: 220px;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .heading {
     font-size: 46px;
     height: 150px;

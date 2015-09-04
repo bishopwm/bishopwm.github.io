@@ -164,6 +164,10 @@ body {
 	width: 400px;
 	height: 150px;
 }
+.spacer-tiny {
+	width: 400px;
+	height: 100px;
+}
 
 .nav {
 	display: inline;
@@ -253,7 +257,7 @@ a.project-anchor {
 }
 
 .links-list {
-	margin-top: 28px;
+	margin-top: 126px;
 	list-style-type: none;
 }
 .links-list-item {
@@ -261,6 +265,12 @@ a.project-anchor {
 	margin-right: 80px;
 }
 
+#project-button2 {
+	font-size: 20px;
+}
+.ed-link-span {
+	margin-left: 220px;
+}
 @media (max-width: 600px) {
   .heading {
     font-size: 46px;

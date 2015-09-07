@@ -189,6 +189,12 @@ body {
 	display: none;
 }
 
+.spacer-small-mobile {
+	width: 400px;
+	height: 100px;
+	display: none;
+}
+
 .spacer-small {
 	width: 400px;
 	height: 150px;
@@ -380,6 +386,11 @@ a.project-anchor {
 		border-radius: 20px;
 	    position: absolute;
 
+	}
+	.spacer-small-mobile {
+	width: 400px;
+	height: 30px;
+	display: block;
 	}
 /*	.willy {
 		width: 70%;

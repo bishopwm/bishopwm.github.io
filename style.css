@@ -20,6 +20,24 @@ html body {
 /*	background-color: rgba(207, 207, 216, 0.51);
 	border-radius: 50%;*/
 }
+.mobile-nav-container {
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+	display: none;
+}
+.mobile-nav {
+	list-style-type: none;
+	margin-top: 3em;
+	text-align: center;
+}
+
+.mobile-nav-item {
+/*	display: inline;*/
+	padding-left: 1em;
+	font-size: 2em;
+	margin-left: -2em;
+}
 
 #scroll-links {
 	background-color: rgba(70, 83, 82, 0.76);
@@ -52,6 +70,8 @@ html body {
 	margin-top: 20px;
 	border-radius: 15px;
 	border: 2px solid rgba(255, 255, 255, 0.76);
+	width: 130px;
+	height: 120px;
 }
 
 .projects {
@@ -72,6 +92,12 @@ html body {
 
 .about-me-text {
 	margin-top: 100px;
+
+}
+
+.midsize {
+	font-size: 30px;
+	text-align: center;
 }
 
 .my-stuff {
@@ -155,6 +181,12 @@ body {
 .spacer-large {
 	width: 400px;
 	height: 400px;
+}
+
+.spacer-large-mobile {
+	width: 400px;
+	height: 400px;
+	display: none;
 }
 
 .spacer-small {
@@ -274,27 +306,14 @@ a.project-anchor {
 	height: 100px;
 }
 
-#mobile-hero {
-	text-align: center;
-	background-color: gray;
-	height: 300px;
-	width: 100%;
-	background-image: url("images/newyork.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	color: white;
-	font-weight: bold;
+.mobile-newyork {
+	display: none;
+	font-size: 0.5em;
 }
 
-.mobile-hero-text {
-	font-size: 3em;
-}
-
-.mobile-hero-name {
-	font-size: 4em;
-	padding-top: 60px;
-
+.mobile-link-item {
+	font-size: 1.4em;
+	display: inline;
 }
 
 
@@ -322,6 +341,13 @@ a.project-anchor {
 
 	}
 
+	.mobile-nav-container {
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+	display: block;
+	}
+
 	#education-button {
 		display: none;
 	}
@@ -339,11 +365,25 @@ a.project-anchor {
 	}
 
 	#scroll-links {
-		display: none;
-	}
+		background-color: transparent;
+		margin-top: 60px;
+		margin-left: 10px;
+		width: 120px;
+		height: 360px;
+		border-radius: 20px;
+	    position: absolute;
 
-	#scroll-links.past-map {
-	  display: none;
+	}
+/*	.willy {
+		width: 50%;
+		height: 45%;
+
+	}*/
+
+
+	.sidebar-list-item {
+		width: 100%;
+		padding-left: 0.8em;
 	}
 	.empireimg {
 		display: none;
@@ -356,21 +396,28 @@ a.project-anchor {
 	.ironhack-logo {
 		width: 9%;
 	}
-	.side-gallery {
+/*	.side-gallery {
 		display: none;
-	}
+	}*/
 
 	.bounce {
 		display: none;
 	}
-	.pounce {
+/*	.pounce {
 		display: none;
-	}
+	}*/
 	.founce {
 		display: none;
 	}
 	.ounce {
 		display: none;
+	}
+	.midsize {
+		font-size: 2em;
+	}
+
+	.will-paragraph {
+		font-size: 2em;
 	}
 	.wots-pic {
 		width: 90%;
@@ -383,8 +430,22 @@ a.project-anchor {
 	.spacer-small {
 		display: none;
 	}
-	#map { 
+/*	#map { 
 	display: none;
+	}*/
+
+	.mobile-newyork {
+		display: block;
+	}
+	.spacer-large-mobile{
+		display: block;
+	}
+	.about-me-text {
+	padding-top: 150px;
+
+	}
+	.logo-list {
+		margin-left: 0.3em;
 	}
 
 }

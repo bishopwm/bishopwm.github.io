@@ -22,16 +22,14 @@
 
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 <div id="map"></div>
-<!-- <div id="mobile-hero" media="(max-width: 800px)">
-<p class="mobile-hero-name">William Bishop</p>
-<p class="mobile-hero-text">Jr. Web Developer<br />New York, NY</p>
-<p class="mobile-hero-text">"Life begins at the end of your comfort zone." -N.D. Walsch</p>
-</div> -->
 
-<script>
+
+
+
 
 
 
+<script>
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoid2Jpc2hvcDIzMSIsImEiOiJlNjdmZWQ5NWMwMjdmOTNiNjJiZTY0ZTdmZTVlOWY0OSJ9.11weNx-x_-nmTstxP9Kq6g';
 var map = L.mapbox.map('map', 'wbishop231.n6fncj3h');
@@ -130,6 +128,8 @@ $(window).on('scroll',function(){
 <div class="heading">
 	William Bishop
 		<p class="newyork">Jr. Web Developer <img src="images/EmpireStateBuilding.png" style="width: 1%;" class="empireimg"> New York, NY</p>
+		<p class="mobile-newyork">Fullstack Jr. Web Developer</p>
+		<p class="mobile-newyork">New York, N.Y.
 		<p class="quote">"Life begins at the end of your comfort zone." -N.D. Walsch</p>
 		<a href="#project-div"><img src="images/downarrow.png" class="founce" visibility="visible"></a>
 		<a href="#about"><img src="images/downarrow.png" class="bounce" visibility="visible"></a>
@@ -139,7 +139,7 @@ $(window).on('scroll',function(){
 
 <div id="scroll-links">
 	<ul class="sidebar">
-		<li><img src="images/willcomp.jpg" style="width: 130px;height: 120px;" class="willy"></li>
+		<li><img src="images/willcomp.jpg" class="willy"></li>
 		<li class="sidebar-list-item"><a href="https://www.github.com/bishopwm" target="_blank"><img src="images/github.png" style="width: 40%; margin-top: 20px;"></a></li>
 		<li class="sidebar-list-item"><a href="https://www.linkedin.com/in/williambishop231" target="_blank"><img src="images/linkedin.png" style="width: 40%; margin-top: 20px;"></a></li>
 		<li class="sidebar-list-item"><a href="mailto:william.bishopmc@gmail.com?Subject=Hello,%20William!" target="_top"><img src="images/email.png" style="width: 40%; margin-top: 20px;"></a></li>
@@ -149,17 +149,28 @@ $(window).on('scroll',function(){
 </div>
 
 
-
-
 <div class="projects">
 	
 		<div name="ed-div"></div>
 			<div class="about-me-text">
 			<div class="spacer-small"></div>
-				<h1>I'm looking for new opportunities to grow my current skillset:</span> <span style="color: rgba(249, 197, 113, 1); font-weight: bold;"><br /><br /> ← HTML/CSS, Ruby/Ruby on Rails, JavaScript/jQuery, Git/Github, SQL →</span></h1>
-
+				<p class="midsize">I'm looking for new opportunities to grow my current skillset:</span> <span style="color: rgba(249, 197, 113, 1); font-weight: bold;"><br /><br /> ← HTML/CSS, Ruby/Ruby on Rails, JavaScript/jQuery, Git/Github, SQL →</span></p>
+				<div class="mobile-nav-container">
+					<ul class="mobile-nav">
+						<li class="mobile-nav-item">
+							<a href="#william">Will</a>
+						</li><hr />
+						<li class="mobile-nav-item">
+							<a href="#about">Education</a>
+						</li><hr />
+						<li class="mobile-nav-item">
+							<a href="#project-div">Projects</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="spacer-large"></div>
+			<div class="spacer-large-mobile"></div>
 
 			<div name="william"></div>
 				<ul class="links-list pull-right">
@@ -172,11 +183,20 @@ $(window).on('scroll',function(){
 				</ul>
 			<div class="everything-will">
 				<div class="spacer-tiny"></div>
-				<h1>William Bishop</h1><br />
-				<p><img src="images/globe.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>I am a <span style="color: maroon; font-weight: bold;">driven, creative, & globally-minded </span>individual.</p><br />
-				<p><img src="images/graduate.png" style="width: 6%;"><span>&nbsp;&nbsp;&nbsp;</span>I graduated <span style="color: #f19a0e; font-weight: bold;">top of my class in just 3 years</span>, while also completing a <span style="color: maroon; font-weight: bold;">4 month full-time project management role, 8 months abroad</span>, and an intensive <span style="color: #f19a0e; font-weight: bold;">web development bootcamp.</span></p><br />
-				<p><img src="images/briefcase.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;</span><span style="color: maroon; font-weight: bold;">Frontend</span> or <span style="color: #f19a0e; font-weight: bold;">Backend</span>, &nbsp;<span style="color: maroon; font-weight: bold;">JavaScript</span> or <span style="color: #f19a0e; font-weight: bold;">Ruby</span>, I find the challenge of learning new technologies fun and rewarding, which is why I want to make it my full-time career.</p><br />
-				<p><img src="images/brain.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;</span>I'm looking for an <span style="color: maroon; font-weight: bold;">environment</span> in which I can grow as a <span style="color: #f19a0e; font-weight: bold;">developer & an individual.</span></p>
+				<h1>William Bishop</h1><br />					
+					<ul class="mobile-nav" style="margin-top: -4.6em; margin-left: 14em;">
+						<li class="mobile-link-item" style="margin-right: 3em;">
+							<a href="#about">Education</a>
+						</li>
+						<li class="mobile-link-item">
+							<a href="#project-div">Projects</a>
+						</li>
+					</ul>
+				
+				<p class="will-paragraph"><img src="images/globe.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>I am a <span style="color: maroon; font-weight: bold;">driven, creative, & globally-minded </span>individual.</p><br />
+				<p class="will-paragraph"><img src="images/graduate.png" style="width: 6%;"><span>&nbsp;&nbsp;&nbsp;</span>I graduated <span style="color: #f19a0e; font-weight: bold;">top of my class in just 3 years</span>, while also completing a <span style="color: maroon; font-weight: bold;">4 month full-time project management role, 8 months abroad</span>, and an intensive <span style="color: #f19a0e; font-weight: bold;">web development bootcamp.</span></p><br />
+				<p class="will-paragraph"><img src="images/briefcase.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;</span><span style="color: maroon; font-weight: bold;">Frontend</span> or <span style="color: #f19a0e; font-weight: bold;">Backend</span>, &nbsp;<span style="color: maroon; font-weight: bold;">JavaScript</span> or <span style="color: #f19a0e; font-weight: bold;">Ruby</span>, I find the challenge of learning new technologies fun and rewarding, which is why I want to make it my full-time career.</p><br />
+				<p class="will-paragraph"><img src="images/brain.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;</span>I'm looking for an <span style="color: maroon; font-weight: bold;">environment</span> in which I can grow as a <span style="color: #f19a0e; font-weight: bold;">developer & an individual.</span></p>
 			</div>
 		<a href="#william"><img src="images/downarrow.png" class="ounce" visibility="visible"></a>
 
@@ -188,11 +208,16 @@ $(window).on('scroll',function(){
 			<div class="my-stuff">
 
 				<h1>Education<span class="ed-link-span"><a href="#project-div" class="button" id="project-button2">Projects</a></span></h1><br />
-					<p> B.A. International Studies, minors in Russian and Spanish<br /> College of Charleston</p>
+					<ul class="mobile-nav" style="margin-top: -4.6em; margin-left: 14em;">
+						<li class="mobile-link-item">
+							<a href="#project-div">Projects</a>
+						</li>
+					</ul>
+					<p class="will-paragraph"> B.A. International Studies, minors in Russian and Spanish<br /> College of Charleston</p>
 					<p class="small-font">3.9, Magna cum laude</p>
 					<p class="small-font">International Scholar</p>
 					<p class="small-font">National Russian Laureate Scholar</p><br /><br />
-					<p>Ironhack Web Development School <br /> Barcelona, Spain </p>
+					<p class="will-paragraph">Ironhack Web Development School <br /> Barcelona, Spain </p>
 					<p class="small-font">Full Stack Web Development</p>
 					<p class="small-font">(With a focus on Agile methodologies)</p>
 						<a href="http://internationalstudies.cofc.edu/index.php"><img src="images/cofc.jpeg" class="cofc-logo"></a>
@@ -213,16 +238,21 @@ $(window).on('scroll',function(){
 		<div class="mobile-spacer" media="(max-width: 800px)"></div>
 
 		<div class="projects-section" id="projects"></div>	
-		<h1>Projects</h1>
+		<h1>Projects</h1><br />
+					<ul class="mobile-nav" style="margin-top: -4.6em; margin-left: 14em;">
+						<li class="mobile-link-item">
+							<a href="#william">Will</a>
+						</li>
+					</ul>
 		<a href="http://www.thewordonthest.com" target="_blank"><h1>Word on The Street</h1></a>
-			<p class="project-description">
+			<p class="project-description will-paragraph">
 				"Whether you're an expat, a traveller, or just someone curious about the exciting things going on in your neighborhood, don't forget to check out the Word on the Street before your next outing."
 			</p>
-			<ul class="logo-list">
+			<ul class="logo-list ">
 				<li class="logo-list-item"><img src="images/HTML5.png" width="5%"></li>
-				<li class="logo-list-item"><img src="images/css.png" width="4%"></li>
+				<li class="logo-list-item"><img src="images/css.png" width="3.7%"></li>
 				<li class="logo-list-item"><img src="images/ruby.png" width="7%"></li>
-				<li class="logo-list-item"><img src="images/js.png" width="5%"></li>
+				<li class="logo-list-item"><img src="images/js.png" width="4.6%"></li>
 				<li class="logo-list-item"><img src="images/jquery.png" width="5%"></li>
 			</ul>
 			<div class="container" style="margin-top: 40px;">
@@ -241,7 +271,7 @@ $(window).on('scroll',function(){
 
 			
 		<a href="https://mock-auction.herokuapp.com" target="_blank"><h1>Mock Auction App</h1></a>
-			<p class="project-description">
+			<p class="project-description will-paragraph">
 				A simple rails app intended to imitate the function of eBay or Craigslist for practicing with Rails backend techniques. 
 			</p>
 			<ul class="logo-list">
@@ -263,13 +293,13 @@ $(window).on('scroll',function(){
 
 
 		<a href="https://spotify-searcher-practice.herokuapp.com" target="_blank"><h1>Spotify Searcher</h1></a>
-			<p class="project-description">
+			<p class="project-description will-paragraph">
 				A basic JavaScript/jQuery application.
 			</p>
 			<ul class="logo-list">
 				<li class="logo-list-item"><img src="images/HTML5.png" width="5%"></li>
-				<li class="logo-list-item"><img src="images/css.png" width="4%"></li>
-				<li class="logo-list-item"><img src="images/js.png" width="5%"></li>
+				<li class="logo-list-item"><img src="images/css.png" width="3.7%"></li>
+				<li class="logo-list-item"><img src="images/js.png" width="4.6%" style="margin-top: 6px;"></li>
 				<li class="logo-list-item"><img src="images/jquery.png" width="5%"></li>
 			</ul>
 			<div class="spotify-gallery" style="margin-top: 40px;">

@@ -316,6 +316,10 @@ a.project-anchor {
 	display: inline;
 }
 
+.mobile-nav {
+	display: none;
+}
+
 
 
 @media (max-width: 800px) {
@@ -446,6 +450,9 @@ a.project-anchor {
 	}
 	.logo-list {
 		margin-left: 0.3em;
+	}
+	.mobile-nav {
+		display: block;
 	}
 
 }

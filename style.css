@@ -143,7 +143,7 @@ body {
 .heading {
 	background-color: rgba(70, 83, 82, 0.76);
 	width: 100%;
-	height: 210px;
+	height: 225px;
 	padding: 15px;
 	text-align: center;
 	font-size: 70px;
@@ -302,6 +302,9 @@ a.project-anchor {
 
 #project-button2 {
 	font-size: 20px;
+	float: right;
+	margin-top: 24px;
+	margin-right: 260px;
 }
 .ed-link-span {
 	margin-left: 220px;
@@ -326,11 +329,33 @@ a.project-anchor {
 	display: none;
 }
 
+#projects-solo-link1 {
+	display: block;
+}
 
-@media (max-width: 800px) {
+#projects-solo-link2 {
+	display: block;
+}
+
+@media (max-width: 400px) {
+	#projects-solo-link1 {
+		display: none;
+	}
+
+
+
+}
+
+
+@media (max-width: 950px) {
+  .leaflet-control-attribution {
+  	display: none;
+  }
   .heading {
+  	width: 100%;
     font-size: 46px;
     height: 150px;
+    padding: 0;
   }
   .newyork {
   	display: none;
@@ -338,11 +363,17 @@ a.project-anchor {
   .quote {
   	display: none;
   }
+  #content {
+  	margin-left: 0;
+  }
+  #william-heading {
+  	padding-left: 38px;
+  }
 	.projects {
 		height: 1000px;
-		width: 80%;
+		width: 100%;
 		margin-top: 700px;
-		margin-left: 60px;
+		/*margin-left: 60px;*/
 		text-align: left;
 		font-size: 12px;
 		background-color: white;
@@ -351,7 +382,7 @@ a.project-anchor {
 	}
 
 	.mobile-nav-container {
-	width: 200px;
+	width: 100%;
 	height: 100px;
 	margin: 0 auto;
 	display: block;
@@ -370,25 +401,25 @@ a.project-anchor {
 	}
 
 	#content {
-		width: 375px;
+		width: 100%;
 	}
 	.projects {
 		width: 100%;
-		margin-left: 0.5em;
+		padding-left: 0.5em;
 	}
 
 	#scroll-links {
 		background-color: transparent;
-		margin-top: 50px;
-		margin-left: 90px;
+		margin: 50px auto;
+		left: -40px;
 		width: 120px;
 		height: 360px;
 		border-radius: 20px;
-	    position: absolute;
+	    position: relative;
 
 	}
 	.spacer-small-mobile {
-	width: 400px;
+	width: 100%;
 	height: 30px;
 	display: block;
 	}
@@ -398,9 +429,16 @@ a.project-anchor {
 
 	}*/
 	#ed-heading {
-		margin-bottom: 80px;
+		margin-bottom: 0;
+		padding-left: 38px;
+	}
+	.project-link {
+		padding-left: 38px;
 	}
 
+	#projects-header {
+		padding-left: 40px;
+	}
 	.sidebar-list-item {
 		width: 100%;
 		padding-left: 0.8em;
@@ -411,6 +449,7 @@ a.project-anchor {
 	.cofc-logo {
 		width: 40%;
 		margin-right: 40px;
+		padding-left: 40px;
 	}
 
 	.ironhack-logo {
@@ -438,11 +477,18 @@ a.project-anchor {
 
 	.will-paragraph {
 		font-size: 2em;
+		padding-left: 40px;
+	}
+	.small-font {
+		padding-left: 40px;
 	}
 	.wots-pic {
 		width: 90%;
 		border-radius: 2px;
 		box-shadow: none;
+	}
+	.wots-list {
+		padding-left: 40px;
 	}
 	.spacer-large {
 		display: none;
@@ -468,8 +514,9 @@ a.project-anchor {
 		margin-left: 0.3em;
 	}
 	.mobile-nav {
-		display: block;
+		display: inline;
 	}
+
 
 
 }

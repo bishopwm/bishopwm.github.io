@@ -174,7 +174,7 @@ body {
 }
 
 .quote {
-	font-size: 20px;
+	font-size: 16px;
 	letter-spacing: 10px;
 }
 
@@ -356,6 +356,12 @@ a.project-anchor {
     font-size: 46px;
     height: 150px;
     padding: 0;
+  }
+  #anchor-ed-div {
+  	padding-top: 55px;
+  }
+  #anchor-william {
+  	/*margin-top: -150px;*/
   }
   .newyork {
   	display: none;

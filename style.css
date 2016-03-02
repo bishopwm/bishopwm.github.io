@@ -4,6 +4,11 @@ html body {
 	/*background-color: rgba(27, 43, 44, 0.96);*/
 }
 
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
 .side-gallery {
 	width: 300px;
 	height: 800px;

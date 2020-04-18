@@ -2,41 +2,22 @@
 <html>
 <head>
   <title>William Bishop</title>
-
 	<meta charset="utf-8" name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
 	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
-
 	<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
 	<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body>
-
-
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 <div id="map"></div>
-
-
-
-
-
-
-
 <script>
-
 L.mapbox.accessToken = 'pk.eyJ1Ijoid2Jpc2hvcDIzMSIsImEiOiJlNjdmZWQ5NWMwMjdmOTNiNjJiZTY0ZTdmZTVlOWY0OSJ9.11weNx-x_-nmTstxP9Kq6g';
 var map = L.mapbox.map('map', 'wbishop231.n6fncj3h');
-
 map.scrollWheelZoom.disable();
-
-
 var runLayer = omnivore.kml('https://mapbox.js/assets/data/features.kml')
     .on('ready', function() {
         map.fitBounds(runLayer.getBounds());
@@ -126,14 +107,14 @@ $(window).on('scroll',function(){
 
 });
 
-
 </script>
+
 <div name="content"></div>
 <div id="content"></div>
 
 <div class="heading">
-		<p>William M. Bishop</p>
-		<p class="newyork">Product | Digital Strategy | Web Development <!-- <img src="images/EmpireStateBuilding.png" style="width: 1%;padding-bottom: 10px;" class="empireimg">&nbsp; New York, NY --></p>
+		<p>William Bishop</p>
+		<p class="newyork">Software | Product | Web Development <!-- <img src="images/EmpireStateBuilding.png" style="width: 1%;padding-bottom: 10px;" class="empireimg">&nbsp; New York, NY --></p>
 		<p class="mobile-newyork">Product | Digital Strategy</p>
 <!-- 		<p class="mobile-newyork">← HTML & CSS, Ruby, JS, MS Suite, Public Speaking, Russian, Spanish →
 		<p class="quote">← HTML/CSS, Ruby/RoR, JavaScript/jQuery, Bootstrap, Git/Github, SQL, Russian →</p> -->
@@ -163,7 +144,17 @@ $(window).on('scroll',function(){
 		<div name="ed-div" id="anchor-ed-div"></div>
 			<div class="about-me-text">
 			<div class="spacer-small"></div>
-				<p class="midsize">I am a driven and globally-minded individual, continuously seeking innovative ways to positively impact those around me. <br></span> <span style="color: rgba(249, 197, 113, 1); font-weight: bold;"><br /><br /> ← Agile Product Development | Digital Strategy | Customer Success | Web Development | UX/UI | HTML & CSS | Project Management | Relationshop Management | Russian (intermediate) | Spanish (intermediate) →</span></p>
+				<h2>Experience</h2>	
+				<br>
+				<ul id="experience-list">	
+					<li><img id="experience-img-yext" src="images/yextLogo.png"><br>2018 - 2020<br>Manager, API & Technical Support</li>
+					<li><img id="experience-img-amp" src="images/amplifyLogo.png"><br>2018 (Freelance)<br>Technical Product Owner</li>
+					<li><img id="experience-img-meetup" src="images/meetupLogo.png"><br>2016 - 2018<br>Senior Specialist, Meetup Pro</li>
+					<li><img id="experience-img-hcg" src="images/hcgLogo.png"><br>2015-2016<br>Jr. Digital Strategist</li>
+				</ul>
+				<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="williambishop231"><a class="LI-simple-link" href='https://www.linkedin.com/in/williambishop231?trk=profile-badge'>William Bishop</a></div>
+				<!-- <p class="midsize">I am a driven and globally-minded individual, continuously seeking innovative ways to positively impact those around me. <br></span> <span style="color: rgba(249, 197, 113, 1); font-weight: bold;"><br /><br /> ← Agile Product Development | Digital Strategy | Customer Success | Web Development | UX/UI | HTML & CSS | Project Management | Relationshop Management | Russian (intermediate) | Spanish (intermediate) →</span></p> -->
+				
 				<div class="mobile-nav-container">
 					<ul class="mobile-nav">
 						<li class="mobile-nav-item">
@@ -203,7 +194,7 @@ $(window).on('scroll',function(){
 					<div class="spacer-small-mobile"></div>
 				
 				<p class="will-paragraph"><img src="images/globe.png" style="width: 5%;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>I am a <span style="color: maroon; font-weight: bold;">driven, creative, & globally-minded </span>individual.</p><br />
-				<p class="will-paragraph"><img src="images/briefcase.png" style="width: 6%;"><span>&nbsp;&nbsp;&nbsp;</span><span style="color: maroon; font-weight: bold;">Digital</span> or <span style="color: #f19a0e; font-weight: bold;">Web</span>, &nbsp;<span style="color: maroon; font-weight: bold;">Frontend</span> or <span style="color: #f19a0e; font-weight: bold;">Backend</span>, I find the challenge of learning new technologies fun and rewarding</p><br />
+				<p class="will-paragraph"><img src="images/briefcase.png" style="width: 6%;"><span style="color: maroon; font-weight: bold;"> Frontend</span> or <span style="color: #f19a0e; font-weight: bold;">Backend</span>, I love the challenge of learning new technologies</p><br />
 				<p class="will-paragraph"><img src="images/brain.png" style="width: 6%;"><span>&nbsp;&nbsp;&nbsp;</span>I'm looking for an <span style="color: maroon; font-weight: bold;">environment</span> in which I can grow as a <span style="color: #f19a0e; font-weight: bold;">team member & </span><span style="color: maroon; font-weight: bold;">individual</span></p><br>
 				<p class="will-paragraph"><img src="images/engage.png" style="width: 6%;"><span>&nbsp;&nbsp;&nbsp;</span>I  seek out <span style="color: #f19a0e; font-weight: bold;"> innovative</span> ways to<span style="color: maroon; font-weight: bold;"> engage</span> and<span style="color: #f19a0e; font-weight: bold;"> communicate </span> with<span style="color: maroon; font-weight: bold;"> different audiences</span></p>
 			</div>

@@ -538,6 +538,9 @@ a.project-anchor {
 	.mobile-newyork {
 		display: none;
 	}
+	.LI-profile-badge {
+		visibility: hidden;
+	}
 	.willy {
 		display: none;
 	}

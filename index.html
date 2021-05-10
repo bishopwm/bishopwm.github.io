@@ -9,20 +9,28 @@
 	<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
 	<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body>
 <div id="map"></div>
 <script>
-	L.mapbox.accessToken = 'pk.eyJ1Ijoid2Jpc2hvcDIzMSIsImEiOiJlNjdmZWQ5NWMwMjdmOTNiNjJiZTY0ZTdmZTVlOWY0OSJ9.11weNx-x_-nmTstxP9Kq6g';
-	var map = L.mapbox.map('map', 'wbishop231.n6fncj3h');
-	map.scrollWheelZoom.disable();
-	var runLayer = omnivore.kml('https://mapbox.js/assets/data/features.kml')
-		.on('ready', function() {
-			map.fitBounds(runLayer.getBounds());
-		})
-		.addTo(map);
+	mapboxgl.accessToken = 'pk.eyJ1Ijoid2Jpc2hvcDIzMSIsImEiOiJlNjdmZWQ5NWMwMjdmOTNiNjJiZTY0ZTdmZTVlOWY0OSJ9.11weNx-x_-nmTstxP9Kq6g';
+	var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11'
+	});
+
+	// L.mapbox.accessToken = 'pk.eyJ1Ijoid2Jpc2hvcDIzMSIsImEiOiJlNjdmZWQ5NWMwMjdmOTNiNjJiZTY0ZTdmZTVlOWY0OSJ9.11weNx-x_-nmTstxP9Kq6g';
+	// var map = L.mapbox.map('map', 'wbishop231.n6fncj3h');
+	// map.scrollWheelZoom.disable();
+	// var runLayer = omnivore.kml('https://mapbox.js/assets/data/features.kml')
+	// 	.on('ready', function() {
+	// 		map.fitBounds(runLayer.getBounds());
+	// 	})
+	// 	.addTo(map);
 
 	$(function() {
 	$('a[href*=#]:not([href=#])').click(function() {
